@@ -1248,6 +1248,7 @@ input#checkboxLabel:checked ~ .box span{
 }
 .ne{
   background-color: #09235b;
+  height: 120px;
 }
 .oe{
   --tw-bg-opacity: 1;
