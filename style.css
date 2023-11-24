@@ -691,12 +691,14 @@ input[type="checkbox"]:checked ~ label span svg{
 .b .sticky{
   background-color:#09235b !important;
   --tw-bg-opacity: -2 !important;
+  height: 100px;
 }
 .sticky {
   background-color: #33ffad !important; 
   -webkit-backdrop-filter: none; 
   backdrop-filter: none;
   box-shadow: none; 
+  height: 100px;
 }
 
 .sticky .header-logo{
@@ -827,9 +829,15 @@ input#checkboxLabel:checked ~ .box span{
   margin: 0px;
 }
 .ba{
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-top: 2px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
+
+.con{
+  margin-top: 30px;
+}
+
 .ca{
   margin-top: 6px;
   margin-bottom: 6px;
@@ -842,6 +850,27 @@ input#checkboxLabel:checked ~ .box span{
   margin-left: auto;
   margin-right: auto;
 }
+
+.eac{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.parent1{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 180px; 
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.child1{
+  margin: 30px;
+  width: 500px;
+  place-self: center;
+}
+
+
 .fa{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -855,11 +884,23 @@ input#checkboxLabel:checked ~ .box span{
   margin-right: 0.75rem;
 }
 .ia{
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 .ja{
   margin-bottom: 2.25rem;
+}
+
+.child{
+  margin: 0px;
+  width: 300px;
+}
+
+.parent{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 120px; 
+  width: 50%; 
 }
 .ka{
   margin-bottom: 1rem;
@@ -868,7 +909,8 @@ input#checkboxLabel:checked ~ .box span{
   margin-bottom: 2.5rem;
 }
 .ma{
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .na{
   margin-bottom: 2rem;
@@ -1063,7 +1105,8 @@ input#checkboxLabel:checked ~ .box span{
   max-width: 570px;
 }
 .xc{
-  max-width: 470px;
+  max-width: 1000px;
+  
 }
 .yc{
   max-width: 40px;
@@ -1204,7 +1247,8 @@ input#checkboxLabel:checked ~ .box span{
   --tw-border-opacity: 0.2;
 }
 .ne{
-  background-color: transparent;
+  background-color: #09235b;
+  height: 120px;
 }
 .oe{
   --tw-bg-opacity: 1;
@@ -1283,8 +1327,8 @@ input#checkboxLabel:checked ~ .box span{
   padding: 3rem;
 }
 .if{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .jf{
   padding-top: 2rem;
@@ -1299,8 +1343,8 @@ input#checkboxLabel:checked ~ .box span{
   padding-bottom: 6px;
 }
 .mf{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .mff{
   padding-bottom: 0.5rem;
@@ -1367,7 +1411,7 @@ input#checkboxLabel:checked ~ .box span{
   padding-bottom: 120px;
 }
 .cg{
-  padding-top: 100px;
+  padding-top: 200px;
 }
 .dg{
   padding-top: 150px;
@@ -1403,7 +1447,7 @@ input#checkboxLabel:checked ~ .box span{
   padding-bottom: 110px;
 }
 .og{
-  padding-bottom: 50px;
+  padding-bottom: 140px;
 }
 .pg{
   padding-right: 10px;
@@ -1455,8 +1499,13 @@ input#checkboxLabel:checked ~ .box span{
   font-weight: 700;
 }
 .bh{
-  font-weight: 500;
+  font-weight: 400;
 }
+
+.stb{
+  width: 370px;
+}
+
 .ch{
   font-weight: 600;
 }
@@ -1700,6 +1749,12 @@ input#checkboxLabel:checked ~ .box span{
 .b .ij{
   display: none;
 }
+
+.bright:hover{
+  filter: brightness(150%);
+
+}
+
 .b .jj{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
