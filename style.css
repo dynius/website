@@ -864,10 +864,61 @@ input#checkboxLabel:checked ~ .box span{
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1024px) {
+  .parent1{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    row-gap: 5px;
+    column-gap: 180px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .child1{
+    margin: 30px;
+    width: 100%;
+    place-self: center;
+  }
+  
+}
+
 .child1{
   margin: 30px;
-  width: 500px;
+  width: 100%;
   place-self: center;
+}
+
+.parent2{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;  
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.child2{
+  margin: 30px 30px 30px 30px;
+  width: 100%;
+  place-self: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .parent2{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .child2{
+    margin: 30px 30px 0px 30px;
+    width: 100%;
+    place-self: center;
+  }
+
+  .space{
+    margin-bottom: 30px;
+  }
+  
 }
 
 
@@ -891,17 +942,6 @@ input#checkboxLabel:checked ~ .box span{
   margin-bottom: 2.25rem;
 }
 
-.child{
-  margin: 0px;
-  width: 300px;
-}
-
-.parent{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-gap: 120px; 
-  width: 50%; 
-}
 .ka{
   margin-bottom: 1rem;
 }
@@ -1318,7 +1358,7 @@ input#checkboxLabel:checked ~ .box span{
   padding: 1.5rem;
 }
 .ff{
-  padding: 2.75rem;
+  padding: 2.75rem 0rem  2.75rem 0rem;
 }
 .gf{
   padding: 0.75rem;
