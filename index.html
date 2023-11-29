@@ -119,10 +119,12 @@
                   <img src="images/assets/LOGO DYNIUS pos_full.png" alt="logo" class="ec ij" />
                   <img src="images/assets/LOGO DYNIUS neg_full.png" alt="logo" class="ec ob hj" />
                 </a>
+               <div class="leveraging">
                 <p class="mb bh kh uj wj  text-center">
                   Leveraging the latest innovations, Dynius builds solutions and services to realize business value from
                   data.
                 </p>
+              </div>
               </div>
             </div>
           </div>
@@ -572,7 +574,7 @@
             <div class="a mb wl lm/3 ">
               <div class=" cn wow fadeInUp" data-wow-delay=".2s">
                 <img src="images/MicrosoftTeams-image.png" alt="image" class="ea wl xb"
-                  style="height: 400px; width: 400px;" />
+                  style="height: auto; width: auto;" />
               </div>
             </div>
           </div>
@@ -1740,7 +1742,7 @@ By
             <p class="kh ug bh qa" style="padding: 0 2.5rem 0 2.5rem;">Our support team will get back to you as soon as possible via email.</p>
 
             <!-- support ticket form -->
-            <form id="ticketForm" action="sendmail.php" method="POST" enctype="multipart/form-data">
+            <form id="ticketForm"enctype="multipart/form-data">
               <div class="mb pd ba">
                 <div class="ec _k/2 if">
                   <div class="na">
@@ -1770,7 +1772,7 @@ By
                   <div id="messageError" class="error-message"></div>
                 </div>
                 <div class="ec if">
-                  <button class="ug bh ih qe tf wf ri zi wd ai bi ci" type="submit">Submit Ticket</button>
+                  <button id= "submitTicketButton" class="ug bh ih qe tf wf ri zi wd ai bi ci" type="submit">Submit Ticket</button>
                 </div>
               </div>
             </form>
@@ -1813,7 +1815,7 @@ By
             <div class="a lg:absolute md:flex lg:flex-row lg:justify-center lg:mt-3 lg:space-x-16 xl:flex-row md:mb-3;">
               <p class="uj mr-12 space">
                 <span class="font-bold">Dynius GmbH</span> <br>
-                Baarerstrasse 14<br>
+                c/o F Trust, Bahnhofplatz<br>
                 6300 Zug<br>
                 Switzerland<br>
                 CHE-243.431.958 MWST
@@ -1953,7 +1955,33 @@ By
   <!-- ====== Back To Top End -->
 
   <!-- ====== All Scripts -->
-  <script>
+
+  
+  
+  
+
+
+  <script>  
+  
+  document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('submitTicketButton').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default button click behavior
+  
+        // Get form data
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+  
+        // Create mailto link with form data
+        var mailtoLink = 'mailto:dynius@dynius.ai' +
+          '?subject=' + encodeURIComponent('Ticket Submission') +
+          '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+  
+        // Open the default mail application
+        window.location.href = mailtoLink;
+      });
+    });
+
     function startCounting(targetCount, countupNumberId) {
       const countupNumber = document.getElementById(countupNumberId);
 

@@ -879,11 +879,14 @@ input#checkboxLabel:checked ~ .box span{
     width: 100%;
     place-self: center;
   }
-
-  .mlt{
-    margin-left: 0px;
-  }
   
+}
+
+@media screen and (max-width: 500px){
+
+  .leveraging{
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .child1{
@@ -1799,8 +1802,8 @@ input#checkboxLabel:checked ~ .box span{
 
 }
 
-.mlt{
-  margin-left:5rem;
+.leveraging{
+  margin: 0px 30px 0px 30px;
 }
 
 .b .jj{
