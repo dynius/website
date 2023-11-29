@@ -32,7 +32,7 @@
             <nav id="navbarCollapse" class="e mf do oj pn sh vd tc ec nm gm i k ob cm tl kn mt-0">
               <ul class=" dm">
                 <li class="f ej">
-                  <a href="#home" class="menu-scroll ug  text-dark uj fj nf um em vm mb da wl xl rn">
+                  <a href="#home" class="menu-scroll ug  text-dark fj nf um em vm mb da wl xl rn home">
                     Home
                   </a>
                 </li>
@@ -1740,7 +1740,7 @@ By
             <p class="kh ug bh qa" style="padding: 0 2.5rem 0 2.5rem;">Our support team will get back to you as soon as possible via email.</p>
 
             <!-- support ticket form -->
-            <form id="ticketForm" action="mailto:dynius@dynius.ai" method="POST" enctype="multipart/form-data">
+            <form id="ticketForm" action="sendmail.php" method="POST" enctype="multipart/form-data">
               <div class="mb pd ba">
                 <div class="ec _k/2 if">
                   <div class="na">
@@ -1838,7 +1838,7 @@ By
           </a>
           <p class="a flex text-left lg:justify-center uj md:mt-24 lg:mt-2">
             <span class=" text-xs ">
-              Notice: Dynius uses cookies to provide necessary website functionality, improve your <br> experience and
+              <span class="font-bold">Notice:</span> Dynius uses cookies to provide necessary website functionality, improve your experience and
               analyze our traffic.
               By using our website, you agree to our <a href="privacy-policy.html" target="_blank"
                 class="underline hover:text-blue-500">Privacy Policy</a>
@@ -2052,6 +2052,13 @@ By
     function onScroll(event) {
       const sections = document.querySelectorAll('.menu-scroll');
       const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      sections[0].classList.remove("home")
+      sections[0].classList.add("uj")
+
+      if (scrollPos < 10) {
+        sections[0].classList.add("home")
+        sections[0].classList.remove("uj")
+      }
 
       for (let i = 0; i < sections.length; i++) {
         const currLink = sections[i];

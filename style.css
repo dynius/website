@@ -879,6 +879,10 @@ input#checkboxLabel:checked ~ .box span{
     width: 100%;
     place-self: center;
   }
+
+  .mlt{
+    margin-left: 0px;
+  }
   
 }
 
@@ -1795,6 +1799,10 @@ input#checkboxLabel:checked ~ .box span{
 
 }
 
+.mlt{
+  margin-left:5rem;
+}
+
 .b .jj{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1839,6 +1847,12 @@ input#checkboxLabel:checked ~ .box span{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.b .home{
+  --tw-text-opacity: 1;
+  color: rgba(52, 227, 177, var(--tw-text-opacity));
+}
+
 .b .vj{
   --tw-text-opacity: 1;
   color: rgb(149 156 177 / var(--tw-text-opacity));
