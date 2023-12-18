@@ -1,3 +1,26 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.formatOnSave": true,
+    "notebook.formatOnSave.enabled": true,
+    "workbench.list.openMode": "doubleClick",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "notebook.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "terminal.integrated.env.windows": {
+        "PYENV_VERSION": "demo-kyc"
+    },
+    "terminal.integrated.env.linux": {
+        "PYENV_VERSION": "demo-kyc"
+    },
+    "terminal.integrated.env.osx": {
+        "PYENV_VERSION": "demo-kyc"
+    },
+    "python.defaultInterpreterPath": "${env:HOME}/.pyenv/versions/demo-kyc/bin/python",
 }
