@@ -1,1 +1,48 @@
-node_modules/
+# Ignore all local configuration
+**/conf/local/
+
+# Ignore Streamlit secrets
+**/secrets.toml
+
+# Ignore potentially sensitive credentials files
+**/credentials.yml
+
+# Ignore everything in the following folders
+**/logs/
+
+# Also keep all .gitkeep files
+!**/.gitkeep
+
+# Jupyter Notebooks
+**/.ipynb_checkpoints/
+
+# Python
+**/*.pyc
+
+# Distribution
+**/dist/
+**/build/
+**/*.egg-info/
+
+# Data
+data/
+
+# Mac
+**/.DS_Store
+
+# Python
+**/.pytest_cache/
+**/__pycache__/
+
+# Virtualenv
+.venv/
+
+# AWS deployment
+**/cdk.out/
+
+# AWS CLI
+aws/
+awscliv2.zip
+
+# Files
+files/
